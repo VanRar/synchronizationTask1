@@ -21,13 +21,13 @@ public class CarShowroom {
 
     public synchronized Car sellCar() {
         try{
-            System.out.println("Продажа машин открыта");
+            System.out.println("Покупаю машину");
             while (manufacturer.getCars().size() == 0){
                 System.out.println("Машин нет");
                 wait();
             }
             Thread.sleep(999);
-            System.out.println("Продано");
+            System.out.println("Машина куплена");
         }catch (InterruptedException e){
             e.printStackTrace();
         }

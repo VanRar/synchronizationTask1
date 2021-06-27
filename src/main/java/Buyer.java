@@ -8,4 +8,5 @@ public class Buyer {
     public String getName() {
         return name;
     }
+
 }
