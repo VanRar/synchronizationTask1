@@ -4,7 +4,8 @@ import java.util.List;
 public class Manufacturer {
     private String brand;
     CarShowroom carShowroom = new CarShowroom(this);
-    List<Car> cars = new ArrayList<>(10);
+    List<Car> cars = new ArrayList<>();
+
 
     public Manufacturer(String brand) {
         this.brand = brand;
@@ -14,13 +15,20 @@ public class Manufacturer {
         return brand;
     }
 
-    public Car sellCar(){
-        return carShowroom.sellCar();
+
+    public void sellCar() {
+        carShowroom.sellCar();
     }
-    public void acceptCar(){
+
+    public void acceptCar() {
         carShowroom.receiveCar();
     }
-    List<Car> getCars(){
+
+    List<Car> getCars() {
         return cars;
+    }
+
+    public void setCars(List<Car> cars) {
+        this.cars = cars;
     }
 }

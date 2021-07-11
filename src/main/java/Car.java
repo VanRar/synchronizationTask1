@@ -1,10 +1,6 @@
 public class Car {
-    private String brand;
-    private String model;
-
-    public String getModel() {
-        return model;
-    }
+    String brand;
+    String model;
 
     public Car(String brand, String model) {
         this.brand = brand;
