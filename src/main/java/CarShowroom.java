@@ -54,6 +54,7 @@ public class CarShowroom {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        //как завершить потоки, в целом всё вроде как работает
         if (!Thread.currentThread().isInterrupted()) {
             System.out.println(Thread.currentThread().getName() + " ПОКИДАЕТ МАГАЗИН");
             Thread.currentThread().interrupt();
