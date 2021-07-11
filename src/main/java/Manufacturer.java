@@ -21,7 +21,7 @@ public class Manufacturer {
     }
 
     public void acceptCar() {
-        carShowroom.receiveCar();
+       carShowroom.receiveCar();
     }
 
     List<Car> getCars() {

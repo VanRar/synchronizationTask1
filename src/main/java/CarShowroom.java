@@ -59,6 +59,5 @@ public class CarShowroom {
             System.out.println(Thread.currentThread().getName() + " ПОКИДАЕТ МАГАЗИН");
             Thread.currentThread().interrupt();
         }
-
     }
 }

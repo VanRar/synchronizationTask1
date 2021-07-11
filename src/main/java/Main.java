@@ -9,7 +9,5 @@ public class Main {
         new Thread(null, carShowroom::sellCar, "Покупатель 4").start();
 
         new Thread(null, carShowroom::receiveCar, "Производитель").start();
-
-
     }
 }
